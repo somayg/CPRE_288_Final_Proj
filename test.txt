@@ -1,0 +1,40 @@
+/*
+ * servo.h
+ *
+ *  Created on: Nov 11, 2024
+ *      Author: somayg
+ */
+
+
+//#ifndef SERVO_H_
+//#define SERVO_H_
+//
+//#include <stdint.h>
+//#include <stdbool.h>
+//#include <inc/tm4c123gh6pm.h>
+//#include "driverlib/interrupt.h"
+//
+//
+//void servo_init(void);
+//void servo_move(float  degrees);
+//int button_Handler(int ButtonInput);
+//
+//#endif //SERVO_H_
+
+
+#ifndef SERVO_H_
+#define SERVO_H_
+
+#include <stdint.h>
+#include <stdbool.h>
+#include <inc/tm4c123gh6pm.h>
+#include "driverlib/interrupt.h"
+
+void servo_init(void);
+void servo_move(float degrees);
+void calibrate(void);
+
+
+
+
+#endif /* SERVO_H_ */
